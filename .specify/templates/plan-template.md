@@ -31,7 +31,21 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Minimal-by-default impact documented; no unnecessary framework/tool lock-in introduced.
+- FSD structure is explicit for the feature scope, including slice ownership and public APIs.
+- App Router usage is limited to adapter responsibilities in app/ with documented mapping to
+  FSD slices in src/.
+- Environment variable changes are mapped to src/shared/config/env-config.ts with zod
+  validation updates.
+- Supabase integration boundaries are explicit (service/repository layer, auth/policy impact,
+  and data ownership).
+- Quality gates are planned and enforceable: npm run lint, npm run test, npm run build.
+- Performance and bundle impact is measured with explicit no-regression criteria or justified
+  exceptions.
+- Responsive behavior is defined for target mobile and desktop breakpoints.
+- Accessibility and UX acceptance checks are defined for key user flows.
+- Trust and anti-scam controls are planned for listing/offer/settlement flows, including
+  explicit terms (mirror fee and tax) and an auditable action trail.
 
 ## Project Structure
 

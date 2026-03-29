@@ -52,6 +52,15 @@ This template keeps only two public env variables:
 
 They are validated and exported as a single `config` object.
 
+## Constitution
+
+Project governance is defined in `.specify/memory/constitution.md`.
+
+All feature work is expected to pass constitution checks in planning and implementation,
+including module boundary discipline, centralized env validation, anti-scam safeguards,
+explicit trade terms in user flows, mobile-responsive UX, accessibility expectations,
+performance/bundle control, and mandatory lint/test/build gates before merge.
+
 ## Main scripts
 
 - `npm run dev` - start local development

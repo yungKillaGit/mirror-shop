@@ -95,6 +95,27 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### Constitution Alignment *(mandatory)*
+
+- **CA-001**: Proposal MUST justify architectural additions and document why simpler
+  alternatives are insufficient.
+- **CA-002**: Proposal MUST specify affected FSD slices and public APIs, including App Router
+  adapter points in app/.
+- **CA-003**: Any new or changed environment variable MUST be added to
+  src/shared/config/env-config.ts with validation.
+- **CA-004**: Proposal MUST define how npm run lint, npm run test, and npm run build will
+  remain green after implementation.
+- **CA-005**: Proposal MUST define trust controls for listing/offer/settlement changes,
+  including explicit trade terms and anti-scam protections.
+- **CA-006**: Proposal MUST describe the transaction audit trail data captured for dispute
+  analysis and moderation.
+- **CA-007**: Proposal MUST define responsive behavior for supported mobile and desktop
+  breakpoints in all affected user flows.
+- **CA-008**: Proposal MUST define accessibility acceptance criteria for affected screens,
+  including keyboard access and contrast/readability expectations.
+- **CA-009**: Proposal MUST define performance and bundle-size expectations and how regressions
+  will be prevented or justified.
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]
